@@ -1,0 +1,38 @@
+$border: 2px solid #fff
+
+.wrapper
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.container
+  width: 683px
+  height: 1170px
+  background: var(--chakra-colors-green-600)
+  margin: auto
+  border: $border
+  display: flex
+  flex-direction: column
+  position: relative
+  overflow: hidden
+  .circle
+    position: absolute
+    border-radius: 50%
+    border: $border
+    width: 200px
+    height: 200px
+    margin: auto
+    left: calc(50% - 100px)
+    &.mid
+      top: calc(50% - 100px)
+    &.top
+      top: -100px !important
+    &.bottom
+      bottom: -100px !important
+  .half
+    flex: 1
+    border-bottoM: $border
+    position: relative
+
