@@ -1,6 +1,9 @@
 {
   "scripts": {
-    "dev": "next"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 3009",
+    "pm2:start": "pm2 start npm --name football -- run start"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.2.1",
