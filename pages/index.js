@@ -199,24 +199,33 @@ const rand = (obj, day) => {
   })
 
   obj[day] = {
-    team1, team2
+    team1: team1.slice(0, 7), team2: team2.slice(0, 7),
+    sub1: team1.slice(7), sub2: team2.slice(7)
   };
-  console.log("objsss", obj)
 }
 
 const Index = (props) => {
-  const { team1, team2 } = props;
-    console.log({ team1, team2 })
+  const { day, team1, team2, sub1, sub2 } = props;
 
-  return <div>
+  return (
+    <div>
       <div className={Style.wrapper}>
+        <div className={Style.day}>{day}</div>
         <div className={Style.container}>
           <div className={classnames(Style.half, Style.halfUp)}>
             {
               team1.slice(0, 7).map((player, idx) => {
-                return <Player up={true} key={idx} name={player.name} pos={player.pos} point={player.point} />
+                return <Player tier={player.tier} up={true} key={idx} name={player.name} pos={player.pos} point={player.point} />
               })
             }
+            <div className={Style.sub}>
+              <div className={Style.subItem}>Substitution</div>
+              {
+                sub1.map((sub, idx) => {
+                  return <div key={idx} className={Style.subItem}>[{sub.tier}]{sub.name}</div>
+                })
+              }
+            </div>
           </div>
           <div className={classnames(Style.circle, Style.top)}></div>
           <div className={classnames(Style.circle, Style.mid)}></div>
@@ -224,13 +233,23 @@ const Index = (props) => {
           <div className={classnames(Style.half, Style.halfDown)}>
             {
               team2.slice(0, 7).map((player, idx) => {
-                return <Player down={true} key={idx} name={player.name} pos={player.pos} point={player.point} />
+                console.log("player,", player)
+                return <Player tier={player.tier} down={true} key={idx} name={player.name} pos={player.pos} point={player.point} />
               })
             }
+            <div className={Style.sub}>
+              <div className={Style.subItem}>Substitution</div>
+              {
+                sub2.map((sub, idx) => {
+                  return <div key={idx} className={Style.subItem}>[{sub.tier}]{sub.name}</div>
+                })
+              }
+            </div>
           </div>
+        </div>
       </div>
     </div>
-  </div>
+  )
 }
 
 export async function getServerSideProps(context) {
@@ -243,11 +262,11 @@ export async function getServerSideProps(context) {
   }
   console.log("boobobo", obj);
   if (!obj[day]) rand(obj, day);
-  const { team1, team2 } = obj[day];
+  const { team1, team2, sub1, sub2 } = obj[day];
   fs.writeFileSync("rand.json", JSON.stringify(obj))
 
   return {
-    props: {team1, team2}, // will be passed to the page component as props
+    props: {day, team1, team2, sub1, sub2}, // will be passed to the page component as props
   }
 }
 
