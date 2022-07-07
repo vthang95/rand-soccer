@@ -32,18 +32,6 @@ const list = [
         "point": 0
     },
     {
-        "name": "An Minh Thắng",
-        "tier": 1,
-        "pos": "GK",
-        "point": 0
-    },
-    {
-        "name": "Kiều Trọng Tú",
-        "tier": 1,
-        "pos": "GK",
-        "point": 0
-    },
-    {
         "name": "Bùi Đức Toàn",
         "tier": 1,
         "pos": "GK",
@@ -143,7 +131,7 @@ const rand = (obj, day) => {
   if (obj[day]) return;
   const team1 = [
     {
-      "name": "KURAMA",
+      "name": "An Minh Thắng",
       "tier": 1,
       "pos": "GK",
       "point": 0
@@ -151,7 +139,7 @@ const rand = (obj, day) => {
   ];
   const team2 = [
     {
-      "name": "TU",
+      "name": "Kiều Trọng Tú",
       "tier": 1,
       "pos": "GK",
       "point": 0
