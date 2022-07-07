@@ -8,146 +8,122 @@ import Style from "./main.module.sass";
 
 const list = [
     {
-        "name": "NAM ANH",
+        "name": "Nam Anh",
         "tier": 1,
         "pos": "GK",
         "point": 0
     },
     {
-        "name": "DRACO",
-        "tier": 3,
-        "pos": "GK",
-        "point": 0
-    },
-    {
-        "name": "VIET",
+        "name": "Quách Long",
         "tier": 1,
         "pos": "GK",
         "point": 0
     },
     {
-        "name": "ALFRED",
-        "tier": 2,
+        "name": "Đào Tuấn Việt",
+        "tier": 1,
         "pos": "GK",
         "point": 0
     },
     {
-        "name": "TOAN",
-        "tier": 3,
+        "name": "Nguyễn Tuấn Hưng",
+        "tier": 1,
         "pos": "GK",
         "point": 0
     },
     {
-        "name": "VTHANG",
-        "tier": 2,
+        "name": "An Minh Thắng",
+        "tier": 1,
         "pos": "GK",
         "point": 0
     },
     {
-        "name": "TU LUU",
-        "tier": 2,
+        "name": "Kiều Trọng Tú",
+        "tier": 1,
         "pos": "GK",
         "point": 0
     },
     {
-        "name": "TAN TOM",
-        "tier": 2,
+        "name": "Bùi Đức Toàn",
+        "tier": 1,
         "pos": "GK",
         "point": 0
     },
     {
-        "name": "CUONG",
-        "tier": 2,
+        "name": "Trần Việt Thắng",
+        "tier": 1,
         "pos": "GK",
         "point": 0
     },
     {
-        "name": "TUNG DO",
-        "tier": 2,
+        "name": "Lưu Thanh Tú",
+        "tier": 1,
         "pos": "GK",
         "point": 0
     },
     {
-        "name": "PHAN TUNG",
-        "tier": 3,
+        "name": "Tân Tôm",
+        "tier": 1,
         "pos": "GK",
         "point": 0
     },
     {
-        "name": "SON HO",
-        "tier": 3,
+        "name": "Vũ Mạnh Cuờng",
+        "tier": 1,
         "pos": "GK",
         "point": 0
     },
     {
-        "name": "TRUONG",
-        "tier": 3,
+        "name": "Tùng Đỗ",
+        "tier": 1,
         "pos": "GK",
         "point": 0
     },
     {
-        "name": "TOBY",
-        "tier": 3,
+        "name": "Phan Tùng",
+        "tier": 1,
         "pos": "GK",
         "point": 0
     },
     {
-        "name": "DAT",
-        "tier": 3,
+        "name": "Sơn Hồ",
+        "tier": 1,
         "pos": "GK",
         "point": 0
     },
     {
-        "name": "MEDEN",
-        "tier": 2,
+        "name": "Trường",
+        "tier": 1,
         "pos": "GK",
         "point": 0
     },
     {
-        "name": "VICTOR",
-        "tier": 2,
+        "name": "Toby",
+        "tier": 1,
         "pos": "GK",
         "point": 0
     },
     {
-        "name": "TUAN NGUYEN",
-        "tier": 2,
+        "name": "Đinh Tiến Đạt",
+        "tier": 1,
         "pos": "GK",
         "point": 0
     },
     {
-        "name": "ANH TUNG",
-        "tier": 3,
+        "name": "Nguyễn Minh Đăng",
+        "tier": 1,
         "pos": "GK",
         "point": 0
     },
     {
-        "name": "Q.T. DUC",
-        "tier": 2,
+        "name": "Đỗ Đình Cương",
+        "tier": 1,
         "pos": "GK",
         "point": 0
     },
     {
-        "name": "KATIE",
-        "tier": 2,
-        "pos": "GK",
-        "point": 0
-    },
-    {
-        "name": "SON",
-        "tier": 2,
-        "pos": "GK",
-        "point": 0
-    },
-    {
-        "name": "PENDRAGON",
-        "tier": 2,
-        "pos": "GK",
-        "point": 0
-    },
-    {
-        "name": "KHANH HAN",
-        "tier": 2,
+        "name": "Nguyễn Mạnh Tuấn",
+        "tier": 1,
         "pos": "GK",
         "point": 0
     }
