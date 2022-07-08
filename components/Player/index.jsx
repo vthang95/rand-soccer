@@ -4,7 +4,7 @@ import classnames from "classnames";
 // [GK, CB, LB, RB, CM, LW, RW, CF]
 
 const Player = (props) => {
-  const { name, point, pos, up, down, tier } = props || {};
+  const { name, pos, up, down, tier } = props || {};
   return (
     <div className={
       classnames(
@@ -17,7 +17,7 @@ const Player = (props) => {
       )
     }>
       <div className={Style.playerContainer}>
-        <div className={Style.point}>{point}</div>
+        <div className={Style.point}>{tier}</div>
         <div className={Style.name}>
           <span className={Style.tier}>[*].</span>
           <span>{name}</span>

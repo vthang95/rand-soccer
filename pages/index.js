@@ -15,7 +15,7 @@ const list = [
     },
     {
         "name": "Quách Long",
-        "tier": 1,
+        "tier": 5,
         "pos": "GK",
         "point": 0
     },
@@ -27,90 +27,114 @@ const list = [
     },
     {
         "name": "Nguyễn Tuấn Hưng",
-        "tier": 1,
+        "tier": 2,
         "pos": "GK",
         "point": 0
     },
     {
         "name": "Bùi Đức Toàn",
-        "tier": 1,
+        "tier": 4,
         "pos": "GK",
         "point": 0
     },
     {
         "name": "Trần Việt Thắng",
-        "tier": 1,
+        "tier": 2,
         "pos": "GK",
         "point": 0
     },
     {
         "name": "Lưu Thanh Tú",
-        "tier": 1,
+        "tier": 3,
         "pos": "GK",
         "point": 0
     },
     {
         "name": "Tân Tôm",
-        "tier": 1,
+        "tier": 2,
         "pos": "GK",
         "point": 0
     },
     {
         "name": "Vũ Mạnh Cuờng",
-        "tier": 1,
+        "tier": 3,
         "pos": "GK",
         "point": 0
     },
     {
         "name": "Tùng Đỗ",
-        "tier": 1,
+        "tier": 4,
         "pos": "GK",
         "point": 0
     },
     {
         "name": "Phan Tùng",
-        "tier": 1,
+        "tier": 4,
         "pos": "GK",
         "point": 0
     },
     {
         "name": "Sơn Hồ",
-        "tier": 1,
+        "tier": 5,
         "pos": "GK",
         "point": 0
     },
     {
         "name": "Trường",
-        "tier": 1,
+        "tier": 4,
         "pos": "GK",
         "point": 0
     },
     {
         "name": "Toby",
-        "tier": 1,
+        "tier": 3,
         "pos": "GK",
         "point": 0
     },
     {
         "name": "Đinh Tiến Đạt",
-        "tier": 1,
+        "tier": 5,
         "pos": "GK",
         "point": 0
     },
     {
         "name": "Nguyễn Minh Đăng",
-        "tier": 1,
+        "tier": 3,
         "pos": "GK",
         "point": 0
     },
     {
         "name": "Đỗ Đình Cương",
-        "tier": 1,
+        "tier": 3,
         "pos": "GK",
         "point": 0
     },
     {
         "name": "Nguyễn Mạnh Tuấn",
+        "tier": 2,
+        "pos": "GK",
+        "point": 0
+    },
+    {
+        "name": "Sinh",
+        "tier": 1,
+        "pos": "GK",
+        "point": 0
+    },
+    {
+        "name": "Sơn đoòng",
+        "tier": 1,
+        "pos": "GK",
+        "point": 0
+    },
+    {
+        "name": "Nam Coi (bemil)",
+        "tier": 1,
+        "pos": "GK",
+        "point": 0
+    },
+    {
+        "name": "Duc (bemil)",
         "tier": 1,
         "pos": "GK",
         "point": 0
@@ -149,6 +173,8 @@ const rand = (obj, day) => {
   const tier1 = shuffle(list.filter((p) => p.tier === 1));
   const tier2 = shuffle(list.filter((p) => p.tier === 2));
   const tier3 = shuffle(list.filter((p) => p.tier === 3));
+  const tier4 = shuffle(list.filter((p) => p.tier === 4));
+  const tier5 = shuffle(list.filter((p) => p.tier === 5));
   tier1.forEach((p, idx) => {
     if (idx % 2 === 0) team1.push({ ...p, pos: position[team1.length] || "SUB" });
     else team2.push({ ...p, pos: position[team2.length] || "SUB" });
@@ -158,6 +184,14 @@ const rand = (obj, day) => {
     else team2.push({ ...p, pos: position[team2.length] || "SUB" });
   })
   tier3.forEach((p, idx) => {
+    if (idx % 2 === 0) team1.push({ ...p, pos: position[team1.length] || "SUB" });
+    else team2.push({ ...p, pos: position[team2.length] || "SUB" });
+  })
+  tier4.forEach((p, idx) => {
+    if (idx % 2 === 0) team1.push({ ...p, pos: position[team1.length] || "SUB" });
+    else team2.push({ ...p, pos: position[team2.length] || "SUB" });
+  })
+  tier5.forEach((p, idx) => {
     if (idx % 2 === 0) team1.push({ ...p, pos: position[team1.length] || "SUB" });
     else team2.push({ ...p, pos: position[team2.length] || "SUB" });
   })
