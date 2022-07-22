@@ -15,7 +15,7 @@ const list = [
     },
     {
         "name": "Quách Long",
-        "tier": 5,
+        "tier": 4,
         "pos": "GK",
         "point": 0
     },
@@ -44,12 +44,6 @@ const list = [
         "point": 0
     },
     {
-        "name": "Lưu Thanh Tú",
-        "tier": 3,
-        "pos": "GK",
-        "point": 0
-    },
-    {
         "name": "Tân Tôm",
         "tier": 2,
         "pos": "GK",
@@ -57,7 +51,7 @@ const list = [
     },
     {
         "name": "Vũ Mạnh Cuờng",
-        "tier": 3,
+        "tier": 2,
         "pos": "GK",
         "point": 0
     },
@@ -74,14 +68,8 @@ const list = [
         "point": 0
     },
     {
-        "name": "Sơn Hồ",
-        "tier": 5,
-        "pos": "GK",
-        "point": 0
-    },
-    {
         "name": "Trường",
-        "tier": 4,
+        "tier": 3,
         "pos": "GK",
         "point": 0
     },
@@ -93,7 +81,7 @@ const list = [
     },
     {
         "name": "Đinh Tiến Đạt",
-        "tier": 5,
+        "tier": 4,
         "pos": "GK",
         "point": 0
     },
@@ -115,30 +103,6 @@ const list = [
         "pos": "GK",
         "point": 0
     },
-    {
-        "name": "Sinh",
-        "tier": 1,
-        "pos": "GK",
-        "point": 0
-    },
-    {
-        "name": "Sơn đoòng",
-        "tier": 1,
-        "pos": "GK",
-        "point": 0
-    },
-    {
-        "name": "Nam Coi (bemil)",
-        "tier": 1,
-        "pos": "GK",
-        "point": 0
-    },
-    {
-        "name": "Duc (bemil)",
-        "tier": 1,
-        "pos": "GK",
-        "point": 0
-    }
 ]
 
 const position = {
