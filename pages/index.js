@@ -33,7 +33,7 @@ const list = [
     },
     {
         "name": "Bùi Đức Toàn",
-        "tier": 4,
+        "tier": 5,
         "pos": "GK",
         "point": 0
     },
@@ -75,13 +75,13 @@ const list = [
     },
     {
         "name": "Toby",
-        "tier": 3,
+        "tier": 4,
         "pos": "GK",
         "point": 0
     },
     {
         "name": "Đinh Tiến Đạt",
-        "tier": 4,
+        "tier": 5,
         "pos": "GK",
         "point": 0
     },
@@ -99,7 +99,7 @@ const list = [
     },
     {
         "name": "Nguyễn Mạnh Tuấn",
-        "tier": 2,
+        "tier": 3,
         "pos": "GK",
         "point": 0
     },
